@@ -22,7 +22,7 @@ public class BubbleSort {
 
     public static void bubbleSort(int[] nums){
         for(int i = 0; i < nums.length; i++){
-            for(int j = 0; j < nums.length - 1; j ++){
+            for(int j = 0; j < nums.length - i - 1; j ++){  //nums.length - i - 1 => Added a "- i" because in the new iterations we wont be needing to comapare the last element again , because in every iteration the largest value always comes at the end
                if(nums[j] > nums[j + 1]){
                 swap(nums, j, j+1);
                 
