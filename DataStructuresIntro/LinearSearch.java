@@ -24,3 +24,7 @@ public class LinearSearch {
         return -1;
     }
 }
+
+
+
+// O(n)
