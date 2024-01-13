@@ -36,3 +36,5 @@ public class SelectionSort {
         }
     }
 }
+
+// O(n^2)
