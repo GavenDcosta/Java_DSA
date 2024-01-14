@@ -21,6 +21,7 @@ public class Linked_List {
         list.show();
 
         list.delete(3);
+        list.delete(0);
 
         list.show();
         
@@ -91,11 +92,16 @@ public class Linked_List {
 
         public void delete(int pos){
             Node n = head;
-            for(int i = 0; i < pos - 1; i++){
-                n = n.next;
-            }
 
-            n.next = n.next.next;
+            if(pos == 0){
+                head = head.next;
+            }else{
+                for(int i = 0; i < pos - 1; i++){
+                    n = n.next;
+                }
+    
+                n.next = n.next.next;
+            }
         }
     }
 
