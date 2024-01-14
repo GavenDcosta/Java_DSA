@@ -66,6 +66,9 @@ public class Dynamic_Stack{
          if (!isEmpty()) {
              top--;
              stack[top] = 0;
+             shrink();
+         }else{
+            System.out.println("Stack is Empty");
          }
         }
 
@@ -93,6 +96,16 @@ public class Dynamic_Stack{
         System.arraycopy(stack, 0, newStack, 0, length);
         stack = newStack;
         size *= 2;
+       }
+
+       private void shrink(){
+         int length = size();
+         if(length<=(size/2)/2)
+           size = size/2;
+
+           int newStack[] = new int[size];
+           System.arraycopy(stack, 0, newStack, 0, length);
+           stack = newStack;
        }
     }
 }
