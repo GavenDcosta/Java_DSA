@@ -7,7 +7,7 @@ public class twoD_Arrys {
         Scanner in = new Scanner(System.in);
 
         int arr[][] = new int[3][4];
-        System.out.println(arr.length);3
+        System.out.println(arr.length);
 
         System.out.println();
 
