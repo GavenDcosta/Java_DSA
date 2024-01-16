@@ -2,7 +2,7 @@ package Problems.Linear_Search;
 
 public class NosWithEvenNoOfDigits {
     public static void main(String[] args) {
-        int[] nums = {12,345,2,6,7896};
+        int[] nums = {-12,345,-2,6,7896};
         
 
         for(int num : nums){
