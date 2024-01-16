@@ -24,5 +24,10 @@ public class DynamicArrays {
         while(iter.hasNext()){
             System.out.print(iter.next() + " ");
         }
+
+
+        System.out.println();
+
+        System.out.println(list);
     }
 }
