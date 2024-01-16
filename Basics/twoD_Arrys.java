@@ -1,5 +1,6 @@
 package Basics;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class twoD_Arrys {
@@ -24,6 +25,18 @@ public class twoD_Arrys {
                 System.out.print(arr[row][col] + " "); 
             }
             System.out.println();
+        }
+
+        System.out.println();
+
+        for(int row = 0; row < arr.length; row++){
+                System.out.println(Arrays.toString(arr[row])); 
+        }
+
+        System.out.println();
+
+        for(int[] a : arr){
+            System.out.println(Arrays.toString(a)); 
         }
     }
 }
