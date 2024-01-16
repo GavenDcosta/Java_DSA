@@ -1,4 +1,4 @@
-package Loops_and_Conditional;
+package Basics.Loops_and_Conditional;
 
 public class CountingOccurrences {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Loops_and_Conditional;
+package Basics.Loops_and_Conditional;
 
 public class Reverse {
     public static void main(String[] args) {
