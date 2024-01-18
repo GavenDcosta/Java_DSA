@@ -16,6 +16,11 @@ public class Floor {
     }
 
     public static int binarySearch(int[] nums, int target){
+
+        if(target > nums[nums.length-1] || target < nums[0]){
+            return -1;
+        }
+        
         int start = 0;
         int end = nums.length - 1;
 
