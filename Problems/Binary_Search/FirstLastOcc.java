@@ -12,32 +12,52 @@ public class FirstLastOcc {
     }
 
     public static int[] searchRange(int[] nums, int target) {
-        int firstOcc = -1;
-        int lastOcc = -1;
+        int first = firstOcc(nums, target);
+        int last = lastOcc(nums,target);
 
-        if(nums.length == 0){
-            return new int[]{-1, -1};
-        }
+        return new int[]{first, last};
+    }
 
-        if(nums.length == 1 && target == nums[0]){
-            return new int[]{0,0};
-        }
+    public static int firstOcc(int[] nums, int target){
+        int s = 0;
+        int e = nums.length - 1;
+        int ans = -1;
 
-        for(int i = 0; i < nums.length; i ++){
-            if(nums[i] == target){
-                firstOcc = i;
-                break;
+        while(s<=e){
+            int mid = s + (e-s)/2;
+
+            if(nums[mid] == target){
+                ans = mid;
+                e = mid-1;
+            }else if(nums[mid] > target){
+                e = mid - 1;
+            }else{
+                s = mid + 1;
             }
         }
 
-        for(int j = nums.length-1; j >= 0; j --){
-            if(nums[j] == target){
-                lastOcc = j;
-                break;
+        return ans;
+    }
+
+    public static int lastOcc(int[] nums, int target){
+        int s = 0;
+        int e = nums.length - 1;
+        int ans = -1;
+
+        while(s<=e){
+            int mid = s + (e-s)/2;
+
+            if(nums[mid] == target){
+                ans = mid;
+                s = mid + 1;
+            }else if(nums[mid] > target){
+                e = mid - 1;
+            }else{
+                s = mid + 1;
             }
         }
 
-        return new int[]{firstOcc, lastOcc};
+        return ans;
     }
 }
 
