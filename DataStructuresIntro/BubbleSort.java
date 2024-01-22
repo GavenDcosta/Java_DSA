@@ -1,5 +1,7 @@
 package DataStructuresIntro;
 
+//also known as sinking sort or exchange sort
+
 public class BubbleSort {
     public static void main(String[] args) {
         int nums[] = {6,5,2,8,9,4};
