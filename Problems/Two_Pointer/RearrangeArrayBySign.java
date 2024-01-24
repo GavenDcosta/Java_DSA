@@ -1,4 +1,4 @@
-package Problems.Arrays;
+package Problems.Two_Pointer;
 
 public class RearrangeArrayBySign {
     public static void main(String[] args) {
