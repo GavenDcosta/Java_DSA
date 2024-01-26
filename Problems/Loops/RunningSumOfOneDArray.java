@@ -18,4 +18,21 @@ public class RunningSumOfOneDArray{
 
         return nums;
     }    
+
+    // int ans[] = new int[nums.length];
+
+        // for(int i = 0; i< nums.length; i++){
+        //     if(i == 0){
+        //         ans[i] = nums[i];
+        //     }
+
+        //     if(i>0){
+        //         int count = 0;
+        //         for(int k = 0; k<=i; k++){
+        //             count = count + nums[k];
+        //         }
+        //         ans[i] = count;
+        //     }
+        // }
+        // return ans;
 }
