@@ -1,6 +1,6 @@
 package Problems.Binary_Search;
 
-public class SmallestLetter {
+public class SmallestLetterGreaterThanTarget {
     public static void main(String[] args) {
         char letters[] = {'c','f','j'};
 
